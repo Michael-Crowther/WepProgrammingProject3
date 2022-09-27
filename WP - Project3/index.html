@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Michael Crowther</title>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    
+    <h1>Michael Crowther</h1>
+
+    <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resumé</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#about">Home</a></li>
+    </ul>
+    
+    <img id="myImg" src="ProfilePicture.jpg" alt="Michael Crowther">
+
+
+    <script>src = "./app.js"</script>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            document.getElementById("myImg").style.cssFloat = "left";
+        }
+
+        
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+            
+        }
+    </script>
+
+
+    <section id="about"></section>
+
+    <section id="resume"></section>
+
+    <section id="projects"></section>
+
+    <section id="contact"></section>
+-->
+</body>
+</html>
